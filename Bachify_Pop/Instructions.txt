@@ -1,0 +1,69 @@
+Elliot Middleton - Summer 2022
+
+
+In Partial Fulfilment of Master of Science in Sound Design
+
+Project: Bachify-ing Pop:
+	 Coding a Fugue ExpositionArrangement Program based in 5th Species Counterpoint Using Existing Song Materials
+ 
+
+ --- Python Code Instructions --- 
+
+Python Packages to install before running code: 
+	Use pip install or simular 
+	Example: pip install librosa
+		 pip install <<name_of_pakage>>
+
+librosa
+pydub 
+soundfile
+ffmpeg
+spicy 
+matplotlib.pyplot
+sklearn
+
+Additional Packages Used to Run Code: 
+	Should be already ready to run with Python 
+
+numpy
+random 
+os 
+argparse
+
+ ---- How to run the code -----
+
+1. Make sure all packages are installed 
+	Use pip or pip3 or another way to install the above packages 
+	Example: pip install librosa
+
+2. Place the WAV files of the songs you wish to use in the same folder as the python code files, note the names of the WAV files
+	Please ensure the song files have no spaces in the names (use _ or - instead)
+	Files needed for the examples come in the Bachify_Pop Folder
+
+3. Running Slice_Audio.py
+	3.1 open terminal or anaconda
+	3.2 make a path to Bachify_Pop folder
+	3.3 type the line: python Slice_Audio.py --song Name_of_Song
+	Example: 
+		path/to/Bachify_Pop python Slice_Audio.py --song Ribs
+		path/to/Bachify_Pop python Slice_Audio.py --song HelloFuture
+
+4. Sorting Audio Chunks 
+	4.1 make a folder (named the same as the song you are Bachify-ing) with subfolders labelled A B C D 
+	4.2 pick which chunks will go in each folder (each folder must have at least 1 song chunk)
+	4.3 If you want to follow the rules of fugue follow the chart below  
+
+		Alpha	Pop Song	Fugue Exposition
+		A	Verse 		Subject
+		B	Chorus		Counter Subject
+		C 	Bridge		Answer or Counter Subject 2
+		D 	Other 		Free
+
+5. Running PutTogether_Files.py
+	5.1 open terminal 
+	5.2 make a path to Bachify_Pop folder
+	5.3 python PutTogether_Files.py --folder Name_of_Folder 
+	Example: 
+		path/to/Bachify_Pop python PutTogether_Files.py --folder Ribs
+
+6. Enjoy your songs
